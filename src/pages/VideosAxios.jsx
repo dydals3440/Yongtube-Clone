@@ -2,20 +2,16 @@ import React from "react";
 import { useQuery } from "react-query";
 // useParams를 이용해 검색 키워드를 표기
 import { useParams } from "react-router-dom";
-import FakeYoutube from "../api/fakeYoutube";
-import { search } from "../api/youtube";
 import VideoCard from "../components/VideoCard";
+import { search } from "../api/youtube";
 
-export default function Videos() {
+export default function VideosAxios() {
   const { keyword } = useParams();
   const {
     isLoading,
     error,
     data: videos,
-  } = useQuery(["videos", keyword], () => {
-    const youtube = new FakeYoutube();
-    youtube.search(keyword);
-  });
+  } = useQuery(["videos", keyword], () => search(keyword));
   return (
     <>
       <div>Videos {keyword ? `🔍${keyword}` : "🔥HotTrend Video"}</div>
