@@ -2,9 +2,7 @@ import React from "react";
 import { useQuery } from "react-query";
 // useParams를 이용해 검색 키워드를 표기
 import { useParams } from "react-router-dom";
-import FakeYoutube from "../api/fakeYoutubeClient";
 import VideoCard from "../components/VideoCard";
-import Youtube from "../api/youtube";
 import { useYoutubeApi } from "../context/YoutubeApiContext";
 
 export default function Videos() {
