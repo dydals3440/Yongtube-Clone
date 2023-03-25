@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# React-Project-Yongtube(Youtube Clone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React 활용 유튜브 클론 프로젝트입니다.
 
-## Available Scripts
+> 배포 링크: [용튜브](https://yongtube.netlify.app/)
 
-In the project directory, you can run:
+## 🖥️ 프로젝트 소개
 
-### `npm start`
+Youtube를 클론코딩 하여 만든 Yongtube입니다.
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🕰️ 개발 기간
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 23.03.25(토) 완성
+- 향후 추가할 기능 리액트 조금 더 공부 후 진행 예정.
+- 스스로 다시 한번 개발해보기.
 
-### `npm test`
+### 🧑‍🤝‍🧑 프로젝트 참가 인원
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Solo Project - 혼자 진행한 클론 코딩 프로젝트입니다.
 
-### `npm run build`
+### ⚙️ 사용 기술
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Javascript
+- React.js
+- Styled-components
+- Context API
+- Youtube API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📌 주요 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✔️ Youtube API 를 호출해 실시간 인기 동영상 보기
+✔️ Youtube API 를 호출해 검색 키워드별 동영상 검색하기
+✔️ 목록에서 동영상을 클릭해 세부 정보 확인 및 시청하기
+✔️ 작은 화면으로, 큰 화면으로 화면에 맞게 반응형으로 사용하기
 
-### `npm run eject`
+## 향후 추가할 기능
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✔️ 라이트 모드 / 다크 모드 Context API 활용 구현.
+✔️ 대기중일 떄는 로딩 스피너 활용 사용성 높이기.
