@@ -27,7 +27,7 @@ export default function VideoDetail() {
         </div>
       </article>
       <sections className="basis-2/6">
-        <RelatedVideos id={video.id} />
+        <RelatedVideos key={video.id} />
       </sections>
     </section>
   );
