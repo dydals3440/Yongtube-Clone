@@ -17,7 +17,8 @@ export default function Videos() {
   } = useQuery(
     // 전체적인 videos라는 key안에, keyword별로 캐시가 되도록 만들어줌, 두번쨰 인자 어떻게 데이터 통신할 껀지 정의할 수 있는 콜백함수
     ["videos", keyword],
-    () => youtube.search(keyword)
+    () => youtube.search(keyword),
+    { staleTime: 1000 * 60 * 1 }
   );
   return (
     <>
