@@ -1,5 +1,16 @@
 import React from "react";
+import { useQuery } from "react-query";
+import { useYoutubeApi } from "../context/YoutubeApiContext";
 
 export default function ChannelInfo({ id, name }) {
-  return <div>{name}</div>;
+  const { youtube } = useYoutubeApi();
+  const { data: url } = useQuery(["channel", id], () =>
+    youtube.ChannelImageURL(id)
+  );
+  return (
+    <div>
+      {url && <img src={url} alt={name} />}
+      <p>{name}</p>
+    </div>
+  );
 }

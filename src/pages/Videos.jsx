@@ -21,7 +21,6 @@ export default function Videos() {
   );
   return (
     <>
-      <div>Videos {keyword ? `🔍${keyword}` : "🔥HotTrend Video"}</div>
       {isLoading && <p>Loading....</p>}
       {error && <p>Something is Wrong 🙀</p>}
       {videos && (
